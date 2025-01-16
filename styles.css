@@ -4,6 +4,9 @@
     box-sizing: border-box;
     color: white;
     position: relative;
+    font-family: "Bebas Neue", serif;
+  font-weight: 400;
+  font-style: normal;
 }
 html , body{
     height: 100vh;
@@ -14,15 +17,17 @@ html , body{
     
 }
 h1{
+    border-bottom: dotted 2px  orangered;
     font-size: 7vh;
-    right: -35%;
+    right: auto;
+    text-align: center;
     margin: 25px;
 }
 #score{
     text-align: center;
     max-width: 50vh;
     font-size: 6.5vh;
-    right: -40%;
+    right: -35%;
     margin: 25px;
 
 }

@@ -18,10 +18,14 @@ function handleactive(e) {
     if (keysactive["Enter"] === true) {
         checknum();
     }
+    if (e.key==" "){
+        e.preventDefault();
+        num.focus();
+    }
 }
 
 function handleinactive(e) {
-    keysactive[e.key] = false;
+    keysactive[e.key] = false;  
 }
 
 function checknum() {
