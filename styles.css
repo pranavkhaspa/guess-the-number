@@ -1,90 +1,114 @@
-*{
+/* General Reset */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    color: white;
-    position: relative;
+}
+html, body {
+    height: 100%;
+    width: 100%;
+    background-color: black;
     font-family: "Bebas Neue", serif;
-  font-weight: 400;
-  font-style: normal;
-}
-html , body{
-    height: 100vh;
-    width: 100vw;
-    background-color: black;
-    position: relative;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     overflow-x: hidden;
-    
 }
-h1{
-    border-bottom: dotted 2px  orangered;
-    font-size: 7vh;
-    right: auto;
-    text-align: center;
-    margin: 25px;
+#hide{
+    color: black;
 }
-#score{
+/* Heading */
+h1 {
+    font-size: 5rem;
     text-align: center;
-    max-width: 50vh;
-    font-size: 6.5vh;
-    right: -35%;
-    margin: 25px;
+    border-bottom: 2px dotted orangered;
+    margin-bottom: 1rem;
+}
 
+/* Score and Instruction */
+#score, #instruction {
+    font-size: 3.5rem;
+    text-align: center;
+    margin: 1rem 0;
 }
-#instruction{
-    font-size: 4vh;
-    right: -35%;
-    margin: 25px;
+
+/* Input and Buttons */
+input, button, a {
+    font-size: 1.2rem;
+    padding: 0.5rem 1rem;
+    margin: 0.5rem;
+    border-radius: 8px;
+    border: none;
 }
-#num{
-    width: 30vh;
-    font-size: 4vh;
-    right: -40%;
+
+input {
     background-color: black;
-    border-radius: 12px;
-    border: solid 2px rgb(255, 207, 207);
-    margin: 25px;
+    border: 2px solid rgb(255, 207, 207);
+    color: white;
+    width: 100%;
+    max-width: 300px;
 }
-#prevguess{
-    text-align: center;
-    max-width: 30vh;
-    font-size: 4vh;
-    right: -40%;
-    background-color: yellowgreen;
-    margin: 25px;
-}
-#msg{
-    max-width: 45vh;
-    text-align: center;
-    right: -41%;
-    font-size: 4vh;
-    background-color: red;
-}
-#rules{
-    max-width: 50%;
-    max-height: 65%;
-    right: -35%;
-    font-size: 4vh;
-    margin: 25px;
-    line-height: 5vh;
-}
-#check{
-    width: 12vh;
-    font-size: 4vh;
+
+button {
     background-color: rgb(154, 159, 226);
     color: black;
-    right: -40%;
-    border-radius: 20px;
 }
-#restart{
-    text-decoration: none;
-    width: 25vh;
-    font-size: 5vh;
+
+a {
     background-color: rgb(166, 255, 0);
     color: black;
-    right: -40%;
-    margin-left: 30px;
-    border-radius: 20px;
-    padding: 7px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+/* Messages and Rules */
+#prevguess, #msg {
+    margin: 1rem 0;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 8px;
+    max-width: 400px;
+}
+
+#prevguess {
     display: none;
+    background-color: yellowgreen;
+}
+
+#msg {
+        text-align: center;
+        max-width: 45vh;
+        color: 1.5rem;
+        font-size: 4vh;
+        padding: 10px;
+        border-radius: 5px;
+        margin: 20px auto;
+    
+}
+
+#rules {
+    font-size: 1.7rem;
+    line-height: 1.7rem;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+    #score, #instruction {
+        font-size: 1.5rem;
+    }
+    input, button, a {
+        font-size: 0.875rem;
+        padding: 0.5rem;
+    }
+    #rules {
+        line-height: 1rem;
+        font-size: 1.075rem;
+    }
 }
