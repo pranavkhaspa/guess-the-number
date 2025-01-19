@@ -14,6 +14,8 @@ document.addEventListener("keydown", handleactive);
 document.addEventListener("keyup", handleinactive);
 button.addEventListener("click", checknum);
 
+
+
 function handleactive(e) {
     keysactive[e.key] = true;
     if (keysactive["Enter"] === true) {
@@ -31,8 +33,10 @@ function handleinactive(e) {
 
 function checknum() {
     if (life.innerText === "") {
+        
         instruction.style.display = "inline-block";
         instruction.innerText = "Game over! No more lives left.";
+        
         return; // Prevent further play when lives are over
     }
 
@@ -71,6 +75,8 @@ function checknum() {
             }
             life.innerText = life.innerText.slice(0, -1); // Remove one star
             if (life.innerText === "") {
+                button.style.display="None";
+                prevguess.style.display="None"
                 instruction.innerText = "Game over! No more lives left.";
                 restart.style.display = "inline-block";
             }
