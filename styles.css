@@ -11,6 +11,10 @@ html, body {
     font-family: "Bebas Neue", serif;
     
 }
+#hero i{
+    display: none;
+}
+
 #navbar {
     height: 6rem;
     background-color: rgba(76, 0, 151, 0);
@@ -21,6 +25,15 @@ html, body {
     padding: 0 1rem;
     flex-wrap: wrap;
 }
+#brand{
+    height: auto;
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    text-align: center;
+}
 
 #hero {
     display: flex;
@@ -29,9 +42,8 @@ html, body {
     margin: 1rem;
     color: rgba(255, 255, 255, 0.534);
     align-items: center;
-    justify-content: center;
     font-size: 1.5rem;
-    gap: 0.44rem;
+    gap: 22rem;
 }
 
 #logo {
@@ -204,4 +216,29 @@ button {
     #msg{
         font-size: 1.2rem;
     }
+     i{
+        color: white;
+        
+    }
+    #brand{
+        margin: 4rem 2rem;
+        width: 8rem;
+        line-height: 1.3rem;
+        text-align: center;
+    }
+    #hero i {
+        position: absolute;
+        right: 3rem;
+        display: block;
+    }
+    #logo{
+      display: none;
+    }
+    #links{
+        display: none;
+    }
+    #links a{
+        color: white;
+    }
+    
 }

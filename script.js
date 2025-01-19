@@ -9,12 +9,21 @@ const button = document.getElementById("check");
 const restart = document.getElementById("restart");
 const prevguess = document.getElementById("prevguess"); // Targeting the div
 const hide = document.getElementById("hide");
+const hamburger=document.getElementById("ham");
+const links=document.getElementById("links")
 hide.innerText=` Testing purposes only dont cheat :  ${guess}`;
 document.addEventListener("keydown", handleactive);
 document.addEventListener("keyup", handleinactive);
 button.addEventListener("click", checknum);
 
-
+hamburger.addEventListener("click",(e)=>{
+    if (links.style.display==="flex"){
+        links.style.display="none"
+    }
+    else{
+        links.style.display="flex"
+    }
+});
 
 function handleactive(e) {
     keysactive[e.key] = true;
