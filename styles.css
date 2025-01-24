@@ -7,8 +7,10 @@
 html, body {
     height: 100%;
     width: 100%;
+    font-size: 1rem;
     background-color: black;
     font-family: "Bebas Neue", serif;
+    
     
 }
 #hero i{
@@ -191,17 +193,17 @@ button {
     }
 
     #links a {
-        font-size: 1.5rem;
+        font-size: 1.25rem;
         margin: 0.5rem 0;
     }
 
     /* Main content adjustments */
     h1 {
-        font-size: 3rem;
+        font-size: 2.3rem;
     }
 
     #score, #instruction {
-        font-size: 2rem;
+        font-size: 1.7em;
     }
 
     input, button, a {
@@ -210,11 +212,11 @@ button {
     }
 
     #rules {
-        font-size: 1.25rem;
-        line-height: 1.25rem;
+        font-size: 1rem;
+        line-height: 1rem;
     }
     #msg{
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
      i{
         color: white;
