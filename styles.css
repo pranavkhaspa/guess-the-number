@@ -211,13 +211,13 @@ button {
     margin: 12rem;
     display: flex;
     overflow-x: hidden;
-  
+
 
     
 }
 @keyframes move {
     0%{
-        transform: translateX(0%);
+        transform: translateX(0);
 
     }
     100%{
