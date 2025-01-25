@@ -8,24 +8,43 @@ html, body {
     height: 100%;
     width: 100%;
     font-size: 1rem;
+    background-color: black;    
+    scroll-behavior: smooth;
+}
+#footer a{
+    text-decoration: none;
+    color: white;
+}
+
+#page1{
+    height: 100%;
+    width: 100%;
+    font-size: 1rem;
     background-color: black;
     font-family: "Bebas Neue", serif;
-    
-    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 #hero i{
     display: none;
 }
 
 #navbar {
+    position: sticky;
+    top: 2%;
+    backdrop-filter: blur(20px  );
     height: 6rem;
     background-color: rgba(76, 0, 151, 0);
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border-bottom: 1px solid rgba(255, 166, 0, 0.425);
+    border: 1px solid rgba(255, 166, 0, 0.425);
     padding: 0 1rem;
     flex-wrap: wrap;
+    border-radius: 12vh;
+    width: 89vw;
+    margin: 1.5rem;
 }
 #brand{
     height: auto;
@@ -90,15 +109,21 @@ html, body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    
 }
+#num{
+    text-align: left;
+    font-size: 0.9933rem;
+   
+ }
 
 /* Heading */
 h1 {
     font-size: 5rem;
     text-align: center;
     border-bottom: 2px dotted orangered;
-    margin-bottom: 1rem;
+    margin: 2rem;
+
 }
 
 /* Score and Instruction */
@@ -161,9 +186,22 @@ button {
     margin: 20px auto;
 }
 
+
+
+#about{
+    height: auto;
+    width: 100%;
+    background-color: #08080833;
+    color: white;
+    
+}
+#about h1{
+    line-height: 9rem;
+}
 #rules {
+    margin-top: 20rem;
     font-size: 1.7rem;
-    line-height: 1.7rem;
+    line-height: 3rem;
     margin-top: 1rem;
     text-align: center;
 }
@@ -171,15 +209,51 @@ button {
 /* easteregg */
 #hide {
     color: black;
+}#source{
+    height: auto;
+    background-color: black;
+    color: white;
+
 }
 
+#footer i{
+    font-size: 3rem;
+    margin: 0 1rem;
+    
+
+    
+}
+#footer{
+    bottom: -5rem;
+    display: flex;
+    position: relative;
+    
+}
+#leftfoot{
+    /* background-color: #fff; */
+    width: 100%;
+    position: absolute;
+  
+   bottom: 0.5vw;
+   text-align: center;
+   
+   
+}
+leftfoot i{
+    padding-bottom: 12rem;
+}
+
+
 /* Responsive Design */
-@media (max-width: 768px) {
+@media (max-width: 818px) {
     /* Navbar adjustments */
     #navbar {
         flex-direction: column;
         height: auto;
         align-items: center;
+        border-radius: 0%;
+        border: black;
+        border-bottom: 0.13rem double rgba(255, 68, 0, 0.534);
     }
 
     #logo {
@@ -190,6 +264,11 @@ button {
         flex-direction: column;
         width: 100%;
         align-items: center;
+    }
+    #anim:hover{
+        background-color: rgba(153, 205, 50, 0.397);
+        width: 100%;
+        text-align: center;
     }
 
     #links a {
@@ -242,5 +321,13 @@ button {
     #links a{
         color: white;
     }
+    #num{
+       width: 300px;
+       text-align: left;
+       padding-right: 1rem;
+    }
     
 }
+
+
+

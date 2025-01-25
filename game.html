@@ -1,55 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Guess the Number!</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link
-    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
-    rel="stylesheet"
-/>
-<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DotGothic16&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Press+Start+2P&family=Rubik+Dirt&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DotGothic16&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Press+Start+2P&family=Rubik+Dirt&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <script defer src="script.js"></script>
 </head>
-<body>
-   
-    <div id="navbar">
-        
-        <div id="hero">
-            <div id="brand">
-            <div id="logo"></div>
-            <span id="name">pranav khaspa</span> </div>
-            <i id="ham" class="ri-menu-fill"></i>
-        </div>
-        <div id="links">
-            <a href="">Home</a>
-            <a href="">About</a>
-            <a href="">Source Code</a>
-        </div>
-        
-    </div>
- <div id="main">
-    <h1>Guess the number!</h1>
-    <p id="score">⭐⭐⭐⭐⭐</p>
-    <!-- <p id="instruction"  ></p> -->
-    <input type="number"  placeholder="Enter number between 1 and 100"  name="number" id="num">
-    <button id="check">check</button>
-    <a href="/game.html" id="restart">play again</a>
-    <div id="prevguess"><p></p></div>
-    <div id="msg">  </div>
-    <div id="rules">
-        <p>⚪ Guess the number with least points lost</p><br>
-        <p>⚪ use space to enter the section and enter to lock the number</p><br>
-        <p>⚪ Can also use cursor traditionally</p><br>
-        <p id="hide" > Check console for testing</p>
-        
-    </div>
- </div>
 
+<body>
+    <div id="page1">
+        <div id="navbar">
+
+            <div id="hero">
+                <div id="brand">
+                    <div id="logo"></div>
+                    <span id="name">pranav khaspa</span>
+                </div>
+                <i id="ham" class="ri-menu-fill"></i>
+            </div>
+            <div id="links">
+                <a id="anim" class="first" href="">Home</a>
+                <a id="anim" class="second" href="">About</a>
+                <a id="anim" href="">Source Code</a>
+            </div>
+
+        </div>
+        <div id="main">
+            <h1>Guess the number!</h1>
+            <p id="score">⭐⭐⭐⭐⭐</p>
+            <input type="number" placeholder="Guess the number between 1-100" name="number" id="num">
+            <button id="check">check</button>
+            <a href="/game.html" id="restart">play again</a>
+            <div id="prevguess">
+                <p></p>
+            </div>
+            <div id="msg"> </div>
+
+        </div>
+    </div>
+    </div>
+    <div id="about">
+        <div id="rules">
+            <h1>ABOUT</h1>
+            <p>⚪ Guess the number with least points lost(⭐⭐⭐⭐⭐)</p><br>
+            <p>⚪ use space to enter the Input section and enter to lock the number</p><br>
+            <p>⚪ Can also use cursor traditionally</p><br>
+            <p id="hide"> Check console for testing</p>
+        </div>
+        <div id="footer">
+            <div id="leftfoot">
+            <a href="https://github.com/pranavkhaspa"><i class="ri-github-fill"></i></a>
+            <a href="https://www.linkedin.com/in/pranavkhaspa/"><i class="ri-linkedin-fill"></i></a>
+    
+        </div>
+            
+        </div>
+    </div>
 
 
 </body>
+
 </html>

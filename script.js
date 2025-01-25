@@ -95,3 +95,11 @@ function checknum() {
         instruction.innerText = "Please enter a valid number!";
     }
 }
+document.getElementsByClassName("second")[0].addEventListener("click", function(event) {
+    event.preventDefault(); // Prevent the default anchor behavior
+    document.getElementById("about").scrollIntoView({ behavior: "smooth" }); // Smooth scroll to #about
+});
+document.getElementsByClassName("first")[0].addEventListener("click", function(event) {
+    event.preventDefault(); // Prevent the default anchor behavior
+    document.getElementById("page1").scrollIntoView({ behavior: "smooth" }); // Smooth scroll to #about
+});
