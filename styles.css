@@ -10,6 +10,7 @@ html, body {
     font-size: 1rem;
     background-color: black;    
     scroll-behavior: smooth;
+    position: relative;
 }
 #footer a{
     text-decoration: none;
@@ -25,6 +26,7 @@ html, body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 #hero i{
     display: none;
@@ -193,8 +195,51 @@ button {
     width: 100%;
     background-color: #08080833;
     color: white;
+    margin-top: 22rem;
+    position: relative;
+    
     
 }
+#techstack{
+    position: absolute;
+    left: calc(50% - 22rem );
+    font-size: 5rem;
+    height: auto;
+    width: 22rem;
+    color: white;
+    text-align: center;
+    margin: 12rem;
+    display: flex;
+    overflow-x: hidden;
+  
+
+    
+}
+@keyframes move {
+    0%{
+        transform: translateX(0%);
+
+    }
+    100%{
+        transform: translateX(-22rem);
+    }
+    
+   
+    
+}
+#techstack i{
+    padding: 1rem;
+    animation: move;
+    animation-duration:3.9s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    
+    
+}
+#techstack h3{
+    font-size: 2rem;
+}
+
 #about h1{
     line-height: 9rem;
 }
@@ -219,29 +264,12 @@ button {
 #footer i{
     font-size: 3rem;
     margin: 0 1rem;
+
     
 
     
 }
-#footer{
-    bottom: -5rem;
-    display: flex;
-    position: relative;
-    
-}
-#leftfoot{
-    /* background-color: #fff; */
-    width: 100%;
-    position: absolute;
-  
-   bottom: 0.5vw;
-   text-align: center;
-   
-   
-}
-leftfoot i{
-    padding-bottom: 12rem;
-}
+
 
 
 /* Responsive Design */
@@ -269,6 +297,9 @@ leftfoot i{
         background-color: rgba(153, 205, 50, 0.397);
         width: 100%;
         text-align: center;
+    }
+    #main{
+        margin-top: 12rem;
     }
 
     #links a {
